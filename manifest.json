@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ShtokFlix™",
+  "version": "1.0",
+  "description": "Automatically skips intros on Netflix. Created by Yaniv Logi.",
+  "icons": {
+    "128": "images/128px.png" 
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.netflix.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
